@@ -1,0 +1,21 @@
+{
+  "unknown": {
+    "versionSfCore": null,
+    "versionFramework": "4.1.22",
+    "isWithinCompose": false,
+    "composeOrgName": null,
+    "composeServiceName": null,
+    "command": [],
+    "options": {},
+    "error": {
+      "message": "Failed to download and install template from https://github.com/serverless/examples/tree/v4/aws-node-http-api due to A folder named \"/Users/lena/Documents/Web Dev/Careerfoundry Kurs/Full Stack Immersion - 4/meetapp/auth-server\" already exists.",
+      "stack": "Error: Failed to download and install template from https://github.com/serverless/examples/tree/v4/aws-node-http-api due to A folder named \"/Users/lena/Documents/Web Dev/Careerfoundry Kurs/Full Stack Immersion - 4/meetapp/auth-server\" already exists.\n    at routeNew (file:///Users/lena/.serverless/releases/4.1.22/package/dist/sf-core.js:905:6285)\n    at async commandOnboarding (file:///Users/lena/.serverless/releases/4.1.22/package/dist/sf-core.js:905:5024)\n    at async catchAllHandler (file:///Users/lena/.serverless/releases/4.1.22/package/dist/sf-core.js:930:19757)\n    at async runCommand (file:///Users/lena/.serverless/releases/4.1.22/package/dist/sf-core.js:934:4149)\n    at async route (file:///Users/lena/.serverless/releases/4.1.22/package/dist/sf-core.js:945:14849)\n    at async Object.run2 [as run] (file:///Users/lena/.serverless/releases/4.1.22/package/dist/sf-core.js:945:16754)\n    at async run3 (file:///Users/lena/.serverless/releases/4.1.22/package/dist/sf-core.js:945:18014)"
+    },
+    "machineId": "6a955bd0e013f051bc4db93e7aa7da93",
+    "serviceProviderAwsCfStackId": null,
+    "serviceProviderAwsCfStackCreated": null,
+    "serviceProviderAwsCfStackUpdated": null,
+    "serviceProviderAwsCfStackStatus": null,
+    "serviceProviderAwsCfStackOutputs": null
+  }
+}
