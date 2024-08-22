@@ -13,7 +13,7 @@ const Event = ({ event }) => {
       </button>
 
       {showDetails ?
-        <div>
+        <div className="event-details">
           <h3>Details</h3>
           <p> {event.description} </p>
         </div>
