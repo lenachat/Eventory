@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Eventory/static/css/main.f855e6bc.css",
-    "main.js": "/Eventory/static/js/main.64f0d0a0.js",
+    "main.js": "/Eventory/static/js/main.0f1713a3.js",
     "static/js/453.6b067072.chunk.js": "/Eventory/static/js/453.6b067072.chunk.js",
     "service-worker.js": "/Eventory/service-worker.js",
     "index.html": "/Eventory/index.html",
     "main.f855e6bc.css.map": "/Eventory/static/css/main.f855e6bc.css.map",
-    "main.64f0d0a0.js.map": "/Eventory/static/js/main.64f0d0a0.js.map",
+    "main.0f1713a3.js.map": "/Eventory/static/js/main.0f1713a3.js.map",
     "453.6b067072.chunk.js.map": "/Eventory/static/js/453.6b067072.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.64f0d0a0.js"
+    "static/js/main.0f1713a3.js"
   ]
 }
