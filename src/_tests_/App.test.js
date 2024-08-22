@@ -38,7 +38,7 @@ describe('<App /> integration', () => {
     await user.click(berlinSuggestionItem);
 
     const EventListDOM = AppDOM.querySelector('#event-list');
-    const allRenderedEventItems = within(EventListDOM).queryAllByRole('listitem');   
+    const allRenderedEventItems = within(EventListDOM).queryAllByRole('listitem');
 
     const allEvents = await getEvents();
     const berlinEvents = allEvents.filter(
@@ -46,5 +46,29 @@ describe('<App /> integration', () => {
     );
 
     expect(allRenderedEventItems.length).toBe(berlinEvents.length);
+    allRenderedEventItems.forEach(event => {
+      expect(event.textContent).toContain("Berlin, Germany");
+    });
   });
+
+  test('renders a list of events matching the number input by the user', async () => {
+    const user = userEvent.setup();
+    const AppComponent = render(<App />);
+    const AppDOM = AppComponent.container.firstChild;
+
+    // Find the NumberOfEvents input field
+    const NumberOfEventsDOM = AppDOM.querySelector('#number-of-events');
+    const numberOfEventsInput = within(NumberOfEventsDOM).queryByRole('textbox');
+
+    // Type a new number of events, e.g., 10
+    await user.type(numberOfEventsInput, '{backspace}{backspace}10');
+
+    // Wait for the events to be rendered (if necessary)
+    const EventListDOM = AppDOM.querySelector('#event-list');
+    const allRenderedEventItems = within(EventListDOM).queryAllByRole('listitem');
+
+    // Check that the number of events rendered matches the input
+    expect(allRenderedEventItems).toHaveLength(10);
+  });
+
 });
