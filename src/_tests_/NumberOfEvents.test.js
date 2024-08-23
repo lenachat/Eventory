@@ -3,11 +3,16 @@ import { render } from '@testing-library/react';
 import { getEvents } from '../api';
 import EventList from '../components/EventList';
 import userEvent from "@testing-library/user-event";
+import { useState } from 'react';
 
 describe('<NumberOfEvents /> component', () => {
   let NumberOfEventsComponent;
   beforeEach(() => {
-    NumberOfEventsComponent = render(<NumberOfEvents currentNOE={32} setCurrentNOE={() => { }} />);
+    const Wrapper = () => {
+      const [currentNOE, setCurrentNOE] = useState(32);
+      return <NumberOfEvents currentNOE={currentNOE} setCurrentNOE={setCurrentNOE} />;
+    };
+    NumberOfEventsComponent = render(<Wrapper />);
   });
 
   test('renders textbox', () => {

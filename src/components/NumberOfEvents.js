@@ -2,15 +2,15 @@ import { useState } from "react";
 import { useEffect } from "react";
 
 const NumberOfEvents = ({ currentNOE, setCurrentNOE }) => {
-  const [numberOfEvents, setNumberOfEvents] = useState(currentNOE);
+  //const [numberOfEvents, setNumberOfEvents] = useState(currentNOE);
 
-  useEffect(() => {
-    setNumberOfEvents(currentNOE);
-  }, [currentNOE]);
+  // useEffect(() => {
+  //   setCurrentNOE(currentNOE);
+  // }, [currentNOE]);
 
   const handleInputChanged = (event) => {
     const value = event.target.value;
-    setNumberOfEvents(value);
+    //setNumberOfEvents(value);
     setCurrentNOE(Number(value));
   }
 
@@ -21,7 +21,7 @@ const NumberOfEvents = ({ currentNOE, setCurrentNOE }) => {
         type="text"
         className="number-of-events"
         placeholder="Enter number of events"
-        value={numberOfEvents}
+        value={currentNOE}
         onChange={handleInputChanged}
       />
     </div>
