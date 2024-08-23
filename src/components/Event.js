@@ -5,9 +5,11 @@ const Event = ({ event }) => {
 
   return (
     <li className="event-item">
-      <h2> {event.summary} </h2>
-      <p> {event.created} </p>
-      <p className="event-location"> {event.location} </p>
+      <div className="date-location-container">
+        <p>{event.created.slice(0, 10)}</p>
+        <p className="event-location">{event.location}</p>
+      </div>
+      <h2 className="event-title">{event.summary}</h2>
       <button className="details-btn" onClick={() => setShowDetails(!showDetails)}>
         {showDetails ? 'Hide Details' : 'Show Details'}
       </button>

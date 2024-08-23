@@ -26,7 +26,7 @@ describe('<Event /> component', () => {
   });
 
   test('renders event start time', () => {
-    const eventStartTime = screen.getByText(mockEvent.created);
+    const eventStartTime = screen.getByText(mockEvent.created.slice(0, 10));
     expect(eventStartTime).toBeInTheDocument();
   });
 
