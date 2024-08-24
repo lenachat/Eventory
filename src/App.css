@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Fascinate&family=Roboto:wght@300&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Oswald:wght@200&display=swap);
 
 :root {
   --text-color: #F8F3F1;
@@ -10,7 +10,7 @@
   background:
     linear-gradient(-30deg, rgb(77, 187, 201), rgba(221, 81, 177, 0.8), rgba(245, 123, 36, 0.8));
   color: var(--text-color);
-  font-family: "Roboto", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 .App * {
@@ -24,11 +24,12 @@
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 3em;
   margin-bottom: 20px;
   margin-top: 0;
   text-align: center;
-  font-family: "Fascinate", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-weight: lighter;
 }
 
 h3 {
@@ -66,7 +67,7 @@ input[type="number"] {
 
 .city {
   width: 250px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Nunito", sans-serif;
   text-align: center;
   color: var(--text-color);
 }
@@ -104,7 +105,7 @@ input[type="number"] {
 }
 
 .suggestions>li:hover {
-  background-color: rgba(82, 82, 82, 0.3);
+  background-color: rgba(180, 179, 179, 0.3);
 }
 
 #number-of-events {
@@ -114,7 +115,7 @@ input[type="number"] {
 .number-of-events {
   width: 250px;
   text-align: center;
-  font-family: "Roboto", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 .event-item {
@@ -142,10 +143,11 @@ input[type="number"] {
 }
 
 .event-title {
-  font-size: 2.1em;
+  font-size: 2.7em;
   color: var(--text-color);
   margin-top: 15px;
-  font-family: "Fascinate", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-weight: lighter;
 }
 
 .event-details {
@@ -159,7 +161,7 @@ input[type="number"] {
   padding: 8px 12px;
   outline: none;
   cursor: pointer;
-  font-family: "Roboto", sans-serif;
+  font-family: "Nunito", sans-serif;
   color: var(--text-color);
   font-size: 14px;
   background: rgba(199, 198, 198, 0.15);
