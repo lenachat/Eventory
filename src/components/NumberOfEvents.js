@@ -1,8 +1,18 @@
-const NumberOfEvents = ({ currentNOE, setCurrentNOE }) => {
+const NumberOfEvents = ({ currentNOE, setCurrentNOE, setErrorAlert }) => {
 
   const handleInputChanged = (event) => {
     const value = event.target.value;
-    setCurrentNOE(Number(value));
+
+    let errorText;
+    if (value < 0 || isNaN(value)) {
+      errorText = "Only positive numbers are allowed.";
+    } else if (value > 32) {
+      errorText = "Maximum number of events is 32.";
+    } else {
+      errorText = "";
+      setCurrentNOE(Number(value));
+    }
+    setErrorAlert(errorText);
   }
 
   return (

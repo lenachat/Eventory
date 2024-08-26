@@ -10,7 +10,7 @@ describe('<NumberOfEvents /> component', () => {
   beforeEach(() => {
     const Wrapper = () => {
       const [currentNOE, setCurrentNOE] = useState(32);
-      return <NumberOfEvents currentNOE={currentNOE} setCurrentNOE={setCurrentNOE} />;
+      return <NumberOfEvents currentNOE={currentNOE} setCurrentNOE={setCurrentNOE} setErrorAlert={() => { }} />;
     };
     NumberOfEventsComponent = render(<Wrapper />);
   });
