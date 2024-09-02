@@ -11,17 +11,12 @@ const ChartContainer = ({ events, allLocations }) => {
   };
 
   return (
-
     <div className="accordion"
-      onClick={toggleCollapse}
-      style={{
-
-      }}
-    >
+      onClick={toggleCollapse}>
       <p> {isCollapsed ? 'Show' : 'Hide'} Event Trends {isCollapsed ? '↓' : '↑'} </p>
       <div style={{ display: isCollapsed ? 'none' : 'block' }}>
         <div className="chart-container">
-          <EventGenresChart events={events} />
+          <EventGenresChart events={events} allLocations={allLocations} />
           <CityEventsChart events={events} allLocations={allLocations} />
         </div>
       </div>

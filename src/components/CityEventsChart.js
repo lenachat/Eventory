@@ -6,7 +6,7 @@ const CityEventsChart = ({ allLocations, events }) => {
 
   useEffect(() => {
     setData(getData());
-  }, [`${events}`]);
+  }, [`${events}`, `${allLocations}`]);
 
   const getData = () => {
     const data = allLocations.map(location => {
@@ -23,7 +23,7 @@ const CityEventsChart = ({ allLocations, events }) => {
         margin={{
           top: 30,
           right: 20,
-          bottom: 60,
+          bottom: 70,
           left: -30,
         }}
       >
