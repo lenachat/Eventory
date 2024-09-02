@@ -37,7 +37,7 @@ const CitySearch = ({ allLocations, setCurrentCity, setInfoAlert }) => {
 
   return (
     <div id="city-search">
-      <p>Filter by city:</p>
+      <p>Filter by City:</p>
       <input
         type="text"
         className="city"
@@ -54,7 +54,7 @@ const CitySearch = ({ allLocations, setCurrentCity, setInfoAlert }) => {
           })}
 
           <li key="See all cities" onClick={handleItemClicked}>
-            <b>See all cities</b>
+            <b>See all Cities</b>
           </li>
 
         </ul> : null
