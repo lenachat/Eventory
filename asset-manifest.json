@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Eventory/static/css/main.a2f9c712.css",
-    "main.js": "/Eventory/static/js/main.de797ec3.js",
-    "static/js/453.6b067072.chunk.js": "/Eventory/static/js/453.6b067072.chunk.js",
+    "main.css": "/Eventory/static/css/main.822fb505.css",
+    "main.js": "/Eventory/static/js/main.32138fb9.js",
+    "static/js/453.832cfe7c.chunk.js": "/Eventory/static/js/453.832cfe7c.chunk.js",
     "service-worker.js": "/Eventory/service-worker.js",
     "index.html": "/Eventory/index.html",
-    "main.a2f9c712.css.map": "/Eventory/static/css/main.a2f9c712.css.map",
-    "main.de797ec3.js.map": "/Eventory/static/js/main.de797ec3.js.map",
-    "453.6b067072.chunk.js.map": "/Eventory/static/js/453.6b067072.chunk.js.map"
+    "main.822fb505.css.map": "/Eventory/static/css/main.822fb505.css.map",
+    "main.32138fb9.js.map": "/Eventory/static/js/main.32138fb9.js.map",
+    "453.832cfe7c.chunk.js.map": "/Eventory/static/js/453.832cfe7c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a2f9c712.css",
-    "static/js/main.de797ec3.js"
+    "static/css/main.822fb505.css",
+    "static/js/main.32138fb9.js"
   ]
 }
