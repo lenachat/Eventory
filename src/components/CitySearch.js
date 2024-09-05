@@ -41,7 +41,7 @@ const CitySearch = ({ allLocations, setCurrentCity, setInfoAlert }) => {
 
   return (
     <div id="city-search">
-      <p>Filter by City:</p>
+      <p className="city-search-text">Choose your nearest city</p>
       <input
         type="text"
         className="city"
