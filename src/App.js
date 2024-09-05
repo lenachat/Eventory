@@ -4,8 +4,6 @@ import NumberOfEvents from './components/NumberOfEvents';
 import { useEffect, useState } from 'react';
 import { extractLocations, getEvents } from './api';
 import { InfoAlert, ErrorAlert, WarningAlert } from './components/Alert';
-import CityEventsChart from './components/CityEventsChart';
-import EventGenresChart from './components/EventGenresChart';
 import ChartContainer from './components/ChartContainer';
 
 import './App.css';
@@ -33,9 +31,10 @@ const App = () => {
 
   const fetchData = async () => {
     const allEvents = await getEvents();
-    const filteredEvents = currentCity === "See all cities" ?
-      allEvents :
-      allEvents.filter(event => event.location === currentCity)
+    const filteredEvents = currentCity === "" || currentCity === "See all cities"
+    ? allEvents
+    : allEvents.filter(event => event.location === currentCity);
+
     setEvents(filteredEvents.slice(0, currentNOE));
     setAllLocations(extractLocations(allEvents));
   }
@@ -52,10 +51,6 @@ const App = () => {
         <CitySearch allLocations={allLocations} setCurrentCity={setCurrentCity} setInfoAlert={setInfoAlert} />
         <NumberOfEvents currentNOE={currentNOE} setCurrentNOE={setCurrentNOE} setErrorAlert={setErrorAlert} />
       </div>
-      {/* <div className="chart-container">
-        <EventGenresChart events={events} />
-        <CityEventsChart events={events} allLocations={allLocations} />
-      </div> */}
       <ChartContainer events={events} allLocations={allLocations} />
       <EventList events={events} />
     </div>

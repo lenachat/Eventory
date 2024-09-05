@@ -29,9 +29,13 @@ const CitySearch = ({ allLocations, setCurrentCity, setInfoAlert }) => {
 
   const handleItemClicked = (event) => {
     const value = event.target.textContent;
+    if (value === "See all Cities") {
+      setCurrentCity(""); // Use an empty string to signify all cities
+    } else {
+      setCurrentCity(value); // Set the selected city
+    }
     setQuery(value);
     setShowSuggestions(false);
-    setCurrentCity(value);
     setInfoAlert("");
   };
 

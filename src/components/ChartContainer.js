@@ -16,7 +16,7 @@ const ChartContainer = ({ events, allLocations }) => {
       <p> {isCollapsed ? 'Show' : 'Hide'} Event Trends {isCollapsed ? '↓' : '↑'} </p>
       <div style={{ display: isCollapsed ? 'none' : 'block' }}>
         <div className="chart-container">
-          <EventGenresChart events={events} allLocations={allLocations} />
+          <EventGenresChart events={events} />
           <CityEventsChart events={events} allLocations={allLocations} />
         </div>
       </div>
